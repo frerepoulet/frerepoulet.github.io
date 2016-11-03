@@ -3,8 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Frère Poulet</title>
+    <link href="css/vagrounded.css" rel="stylesheet" type="text/css"/>
+    <script src="js/TweenLite.min.js"></script>
+  	<script src="js/Draggable.min.js"></script>
+  	<script src="js/CSSPlugin.min.js"></script>
   </head>
   <body>
-    <h1>allo toi<h1>
+    <div id="name" style="font-family:'VAG Rounded';text-align:center;
+    background-color:red;font-size:16px;width:400px;height:300px;
+    padding:10px 12px;cursor:move;top:300px;left:400px;position:absolute;
+    z-index=5000">
+  		<h1>olivier robitaille</h1>
+  		</br>
+  	</div>
+    <script type="text/javascript">
+      Draggable.create('#name', {
+        type: "top,left",
+        bounds: window,
+        edgeResistance: 1,
+        cursor: 'move',
+        zIndexBoost: false,
+      });
+    </script>
   </body>
 </html>
