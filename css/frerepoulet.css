@@ -7,21 +7,21 @@
 body {
   margin: 0;
   overflow: hidden;
+  background-color: white;
+  color: black;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
-a:hover {
-  text-decoration: underline;
-}
+a:hover {text-decoration: underline}
 
 #name {
   font-family: 'VAGRounded';
+  background-color: inherit;
+  background-color: rgba(255, 255, 255, 0.15);
   text-align: center;
-  background-color: white;
   font-size:16px;
   letter-spacing: 5px;
   padding:20px;
@@ -29,5 +29,12 @@ a:hover {
   top:300px;
   left:400px;
   position:absolute;
-  z-index=5000;
+  z-index: 5000;
+}
+
+img {
+  position: absolute;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
 }

@@ -16,13 +16,20 @@
       <a href="mailto:olivier@frerepoulet.com">olivier@frerepoulet.com</a><br>
       819.253.1023
   	</div>
+    <img src="img/frerepoulet1.jpg" style="top:48px;left:165px;"/>
+    <img src="img/frerepoulet5.jpg" style="top:335px;left:308px;"/>
+    <img src="img/frerepoulet2.jpg" style="top:178px;left:428px;"/>
     <script type="text/javascript">
       Draggable.create('#name', {
-        type: "top,left",
         bounds: window,
         edgeResistance: 1,
         cursor: 'move',
-        zIndexBoost: false,
+        zIndexBoost: false
+      });
+      Draggable.create('img', {
+        bounds: window,
+        edgeResistance: 1,
+        cursor: 'move'
       });
     </script>
   </body>
