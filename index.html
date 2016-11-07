@@ -11,16 +11,23 @@
     </script>
   </head>
   <body>
-    <div id="name">
-      <span style="font-size:35px;">olivier robitaille</span><br>
-      <a href="mailto:olivier@frerepoulet.com">olivier@frerepoulet.com</a><br>
-      819.253.1023
-  	</div>
+    <div class="dropdown">
+      <div class="drop-head">
+        <span style="font-size:35px;">olivier robitaille</span><br>
+        <a href="mailto:olivier@frerepoulet.com">olivier@frerepoulet.com</a><br>
+        819.253.1023
+    	</div>
+      <div class="drop-content">
+        <a href="#">Bloc coq</a>
+        <a href="#">Galerie de pénis</a>
+        <a href="#">Aurore 2</a>
+      </div>
+    </div>
     <img src="img/frerepoulet1.jpg" style="top:48px;left:165px;"/>
     <img src="img/frerepoulet5.jpg" style="top:335px;left:308px;"/>
     <img src="img/frerepoulet2.jpg" style="top:178px;left:428px;"/>
     <script type="text/javascript">
-      Draggable.create('#name', {
+      Draggable.create('.dropdown', {
         bounds: window,
         edgeResistance: 1,
         cursor: 'move',

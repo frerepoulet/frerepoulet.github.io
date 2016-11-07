@@ -8,6 +8,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: white;
+  font-family: 'VAGRounded';
   color: black;
 }
 
@@ -17,19 +18,47 @@ a {
 }
 a:hover {text-decoration: underline}
 
-#name {
-  font-family: 'VAGRounded';
-  background-color: inherit;
-  background-color: rgba(255, 255, 255, 0.15);
+.dropdown {
+  width: 400px;
+  height: 120px;
   text-align: center;
   font-size:16px;
   letter-spacing: 5px;
-  padding:20px;
-  cursor:move;
   top:300px;
   left:400px;
   position:absolute;
   z-index: 5000;
+}
+.drop-head {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding:20px;
+  cursor:move;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  min-width: 400px;
+  cursor: pointer;
+}
+
+.drop-content a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 12px;
+  display: block;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+.dropdown:hover .drop-content a:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.dropdown:hover .drop-head {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 img {
